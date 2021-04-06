@@ -1,98 +1,110 @@
 <!DOCTYPE html>
 <!-- https://www.lanablakely.com/ -->
 <html>
+  <head>
+    <title>Learning About Nodes</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
+    />
+  </head>
 
+  <body>
+    <div class="align-head">
+      <header role="banner" class="head-name">LANA BLAKELY</header>
 
-<head>
+      <nav class="nav-bar navbar">
+        <ul class="align-list align-list-item align-list-item-text">
+          <li class="active-list-item" id="home"><a href="#">Home</a></li>
 
-  <title>Learning About Nodes</title>
-<link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+          <li><a href="#news-letter" onclick="toggleNav()">Newsletter</a></li>
 
-</head>
+          <li><a href="#">book club</a></li>
 
+          <li><a href="#">film making</a></li>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn">
+                Dropdown
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+          </li>
 
-<body>
-
-<div class="align-head">
-  <header role="banner" class="head-name">LANA BLAKELY</header>
-
-  <nav class="nav-bar navbar">
-
-   <ul class="align-list align-list-item align-list-item-text">
-
-        <li class="active-list-item"><a href="#">Home</a></li>
-
-        <li><a href="#">Newsletter</a></li>
-
-        <li><a href="#">book club</a></li>
-        
-        <li><a href="#">film making</a></li>
-<li>
-        <div class="dropdown">
-          <button class="dropbtn">Dropdown 
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
-        </div>
-      </li>
-
-      <!-- <li>
+          <!-- <li>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
       </li> -->
-     </ul>
+        </ul>
+      </nav>
+    </div>
+    <article>
+      <section id="nav1" class="main-content">
+        <figure>
+          <img src="./samp.png" alt="" />
+        </figure>
 
-  </nav>
-</div>
-  <article>
+        <aside class="side-content">
+          <h1>Newletter</h1>
+          <p>
+            Join the Ro family. Sign up with your email address to receive a
+            short letter once, or twice, or thrice a month to start your week
+            off on a good note.
+          </p>
+          <div>
+            <div>
+              <input
+                type="text"
+                placeholder="Enter Email Address"
+                class="txt"
+              />
+            </div>
+            <div class="btn-align">
+              <button class="btn">Join Us</button>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </article>
 
-     <section id="nav1" class="main-content">
+    <!-- <article id="news-letter">
+<p>hello</p>
+    </article> -->
+    <footer>
+      <ul class="bottom">
+        <li><a href="#" class="fa fa-facebook"></a></li>
+        <li><a href="#" class="fa fa-twitter"></a></li>
+        <li><a href="#" class="fa fa-youtube"></a></li>
+        <li><a href="#" class="fa fa-instagram"></a></li>
+      </ul>
+    </footer>
+  </body>
 
-      <figure>
-        <img src="./samp.png" alt="">
-      </figure>  
-    
-      <aside class="side-content">
-        <h1>Newletter</h1>
-        <p>
-          Join the Ro family. Sign up with your email address to receive a short letter once, or twice, or thrice a month to start your week off on a good note.
-        </p>
-      </aside>
-     </section>
+  <script>
+    console.log("h1");
 
-  </article>
+    function toggleNav() {
 
- 
-
-
-  <footer>
-    <ul class="bottom">
-      <li><a href="#" class="fa fa-facebook"></a>
-        </li>
-      <li><a href="#" class="fa fa-twitter"></a></li>
-      <li><a href="#" class="fa fa-youtube"></a></li>
-      <li><a href="#" class="fa fa-instagram"></a></li>
-    </ul>
-  </footer>
-
-
-
-</body>
-
-
-<script>
-
-
-  console.log('h1')
-
-</script>
+var myButtonClasses = document.getElementById("btn1").classList;
 
 
+if (myButtonClasses.contains("blue")) {
+
+   myButtonClasses.remove("blue");
+
+} else {
+
+   myButtonClasses.add("blue");
+
+}
+    }
+  </script>
 </html>
